@@ -2,9 +2,10 @@
   "name": "artem",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "script.main.js",
   "dependencies": {
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "grunt-concat-json": "0.0.10"
   },
   "devDependencies": {
     "grunt": "^1.0.1",

@@ -1,4 +1,4 @@
-Module.exports = function(grunt) {
+module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -11,11 +11,13 @@ concat: {
   dist: {
     src: ['js/script1.js', 'js/script2.js'],
     dest: 'js/script.main.js',
-  },
-},
+  }
+}
 });
 
   });
+
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.registerTask('default', ['concat']);
+grunt.loadNpmTasks('grunt-concat-json');
+  grunt.registerTask('dest', ['concat:dest']);
 };
