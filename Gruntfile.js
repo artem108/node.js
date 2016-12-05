@@ -1,4 +1,4 @@
-require('grunt-contrib-concat')();
+require('grunt-contrib-concat');
 
 module.exports = function(grunt) {
 
