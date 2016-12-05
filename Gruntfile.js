@@ -1,23 +1,39 @@
+require('grunt-contrib-concat')(grunt);
+
 module.exports = function(grunt) {
 
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
 
-    grunt.initConfig({
+grunt.initConfig({
 concat: {
-  options: {
-    separator: ';',
-  },
-  dist: {
-    src: ['js/script1.js', 'js/script2.js'],
-    dest: 'js/script.main.js',
-  }
+options: {
+separator: ';'
+},
+dist: {
+src: ['js/*.js'],
+dest: 'js/script.main.js'
+}
+},
+uglify: {
+dist: {
+src: ['js/script.main.js'],
+dest: 'js/script.main.min.js'
+}
+},
+cssmin: {
+options: {
+shorthandCompacting: false,
+roundingPrecision: -1
+},
+target: {
+files: {
+'css/dist/style.min.css': ['css/src/.css']
+}
+}
 }
 });
 
-  });
+grunt.loadNpmTasks('grunt-contrib-concat');
 
-  grunt.loadNpmTasks('grunt-contrib-concat');
-grunt.loadNpmTasks('grunt-concat-json');
-  grunt.registerTask('dest', ['concat:dest']);
+grunt.registerTask('default', ['concat']);
+
 };

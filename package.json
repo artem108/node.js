@@ -1,31 +1,35 @@
 {
-  "name": "artem",
-  "version": "1.0.0",
-  "description": "",
-  "main": "script.main.js",
-  "dependencies": {
-    "grunt": "^1.0.1",
-    "grunt-concat-json": "0.0.10"
-  },
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-jshint": "^1.1.0"
-  },
-  "scripts": {
-    "test": "shit happens "
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/artem108/node.js.git"
-  },
-  "keywords": [
-    "visiva"
-  ],
-  "author": "artem",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/artem108/node.js/issues"
-  },
-  "homepage": "https://github.com/artem108/node.js#readme"
+"name": "artem",
+"version": "1.0.0",
+"description": "",
+"main": "script.main.js",
+"dependencies": {
+  "grunt": "^1.0.1",
+  "grunt-concat-json": "0.0.10"
+},
+"devDependencies": {
+  "grunt": "^1.0.1",
+  "grunt-contrib-concat": "^1.0.1",
+  "grunt-contrib-jshint": "^1.1.0"
+},
+"scripts": {
+"test": "echo "Error: no test specified" && exit 1"
+},
+"repository": {
+"type": "git",
+"url": "git+https://github.com/artem108/node.js.git"
+},
+"author": "artem",
+"license": "ISC",
+"bugs": {
+  "url": "https://github.com/artem108/node.js/issues"
+},
+"homepage": "https://github.com/artem108/node.js#readme"
+},
+"devDependencies": {
+"grunt": "^1.0.1",
+"grunt-contrib-concat": "^1.0.1",
+"grunt-contrib-cssmin": "^1.0.2",
+"grunt-contrib-uglify": "^2.0.0"
+}
 }
